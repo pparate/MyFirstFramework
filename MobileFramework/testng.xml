@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests" thread-count="2">
+  
+  <test name="TestAndroid1" >
+  	<parameter name="port" value="4546"/>
+  	<parameter name="device" value="Pixel_1"/>
+  	<parameter name="platform" value="11"/>
+    <parameter name="mjpeg" value="6683"/>
+    <classes>
+      <class name="appium.mobileFramework.AndroidTest3"/>
+    </classes>
+  </test> 
+ 
+  <test name="TestAndroid2" >
+  	<parameter name="port" value="4547"/>
+  	<parameter name="device" value="Pixel_2"/>
+  	<parameter name="platform" value="11"/>
+  	<parameter name="mjpeg" value="6684"/>
+    <classes>
+      <class name="appium.mobileFramework.AndroidTest2"/>
+    </classes>
+  </test> 
+  
+  
+  <!-- <test name="TestIOS1">
+  <parameter name="port" value="4546"></parameter>
+  <parameter name="device" value="iPhone 14"></parameter>
+    <classes>
+      <class name="appium.mobileFramework.IOSTest2"/>
+    </classes>
+  </test> 
+  <test name="TestIOS2">
+  <parameter name="port" value="4547"></parameter>
+  <parameter name="device" value="iPhone 14 Pro"></parameter>
+    <classes>
+      <class name="appium.mobileFramework.IOSTest3"/>
+    </classes>
+  </test>  -->
+  
+</suite> <!-- Suite -->
